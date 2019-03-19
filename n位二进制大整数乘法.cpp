@@ -25,7 +25,7 @@ int *Func(int Number1[], int Number2[], int n)
         b[i] = Number1[i];
         d[i] = Number2[i];
     }
-
+    
     // if(n==1){
     //     if()
     // }
