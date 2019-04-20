@@ -1,13 +1,13 @@
 #include <iostream>
-#include <stdlib.h>
-#include <time.h>
 #include <algorithm>
 #include <chrono>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 using namespace chrono;
 
-// 设置数组的大小为100000
+// 设置数组的大小为200000
 #define SIZE 200000
 
 // 二分查找函数递归实现
@@ -70,10 +70,10 @@ int main()
 
     auto start = system_clock::now();
     // N=15000
-    // cout << BinarySearch_notr(arr, 15000, SIZE) << endl;
-    cout << BinarySearch_r(arr, 15000, 0, SIZE) << endl;
+    cout << BinarySearch_notr(arr, 15000, SIZE) << endl;
+    // cout << BinarySearch_r(arr, 15000, 0, SIZE) << endl;
     auto end = system_clock::now();
     auto duration = duration_cast<microseconds>(end - start);
-    cout << "total time of recursion funciton :" << double(duration.count()) * microseconds::period::num << "ms" << endl;
+    cout << "total time:" << double(duration.count()) / 1000 << "ms" << endl;
     return 0;
 }
