@@ -1,2 +1,5 @@
 .vscode
 *.exe
+*.class
+test.java
+test.cpp

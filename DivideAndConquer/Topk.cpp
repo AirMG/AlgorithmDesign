@@ -6,7 +6,7 @@
 #include <cmath>
 #include <time.h>
 
-#define SIZE 10000
+#define SIZE 100
 
 using namespace std;
 using namespace chrono;
